@@ -3,7 +3,7 @@ Disaggregating dairy out of composite foods consumed in the UK and then estimati
 
 ## Data Management Files
 
-### Dairy Disag GitHub
+### Dairy Disag GitHub.R
 This R script calculates the number of dairy ingredients and the amount (g) of total dairy, total milk, skimmed milk, semi skimmed mil, full fat (e.g. whole) milk, total cheese, cheddar cheese, cottage cheese, other cheese, skimmed cheese, semi skimmed cheese, full fat (e.g. whole) cheese, yogurt, skimmed yogurt, semi skimmed yogurt, full fat (e.g. whole) yogurt, cream, semi skimmed cream, full fat (e.g. whole) cream, and butter per 100g of foods and drinks in the 2022 UK Nutrient Databank and reported in the 2021 Scottish Health Survey.
 
 Files needed to run this R script:
