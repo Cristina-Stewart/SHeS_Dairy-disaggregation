@@ -177,7 +177,7 @@ foreach var of varlist Dairyg-Butterg {
 	}
 
 *Save as new diet dataset inclusive of dairy disag data
-save "$data\diet_dairydisag.dta_$date", replace
+save "$data\diet_dairydisag_$date.dta", replace
 
 
 
