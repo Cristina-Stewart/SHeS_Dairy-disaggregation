@@ -49,7 +49,7 @@ save "$data\diet_dairydisag_$date.dta", replace
 *Import dairy disag excel file
 ******************************
 clear all
-import excel using "K:\DrJaacksGroup\FSS - Dietary Monitoring\SHeS\SHeS 2021\Data\NDB_SHeS_Disag_Dairy_05122023", firstrow	
+import excel using "K:\DrJaacksGroup\FSS - Dietary Monitoring\SHeS\SHeS 2021\Data\NDB_SHeS_Disag_Dairy_16122023", firstrow	
 
 *Explore these 3 food codes that match two SheS items further
 
@@ -145,10 +145,7 @@ save "$data\NDB_SHeS_Disag_Dairy_$date.dta", replace
 	*Check dairy is fully disaggregated into dairy subtypes
 	gen dairytotal=Milk + Cheese + Yogurt + Cream + Butter
 	gen dairydiff=Dairy-dairytotal
-	ta dairydiff  /*1 item 13.31g off*/
-	
-		*Food number 2276 contains 13.31g of butter but 0g dairy
-		replace Dairy=13.31 if FoodNumber==2276 & Butter==13.31
+	ta dairydiff  /*All fine*/
 		
 	drop dairytotal dairydiff
 
