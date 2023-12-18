@@ -64,7 +64,7 @@ svy, subpop(intake24): mean Avg_Day_Cheese Avg_Day_Cheese_Cheddar Avg_Day_Cheese
 ***********************************************
 *Food category % contributions to dairy intake
 ***********************************************	
-	matrix avgdairy = J(620, 4, .)
+	matrix avgdairy = J(20, 4, .)
 	local r=2
 
 quietly foreach var of varlist Prop_Avg_Dairyg_FC1- Prop_Avg_Dairyg_FC18 {
@@ -92,7 +92,7 @@ quietly foreach var of varlist Prop_Avg_Dairyg_FC1- Prop_Avg_Dairyg_FC18 {
 ***********************************************
 *Main food group % contributions to dairy intake
 ***********************************************
-	matrix avgdairy = J(2500, 4, .)
+	matrix avgdairy = J(70, 4, .)
 	local r=2
 
 	quietly foreach var of varlist Prop_Avg_Dairyg_1- Prop_Avg_Dairyg_66 {
@@ -119,7 +119,7 @@ quietly foreach var of varlist Prop_Avg_Dairyg_FC1- Prop_Avg_Dairyg_FC18 {
 ***********************************************
 *Sub food group % contributions to dairy intake
 ***********************************************
-	matrix avgdairy = J(5100, 4, .)
+	matrix avgdairy = J(150, 4, .)
 	local r=2
 
 	quietly foreach var of varlist Prop_Avg_Dairyg_10R- Prop_Avg_Dairyg_9H {
