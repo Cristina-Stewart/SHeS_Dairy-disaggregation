@@ -4,7 +4,7 @@ Disaggregating dairy out of composite foods consumed in the UK and then estimati
 ## Data Management Files
 
 ### Dairy Disag GitHub.R
-This R script calculates the number of dairy ingredients and the amount (g) of total dairy, total milk, skimmed milk, semi skimmed mil, full fat (e.g. whole) milk, total cheese, cheddar cheese, cottage cheese, other cheese, skimmed cheese, semi skimmed cheese, full fat (e.g. whole) cheese, yogurt, skimmed yogurt, semi skimmed yogurt, full fat (e.g. whole) yogurt, cream, semi skimmed cream, full fat (e.g. whole) cream, and butter per 100g of foods and drinks in the 2022 UK Nutrient Databank and reported in the 2021 Scottish Health Survey.
+This R script calculates the number of dairy ingredients and the amount (g) of total dairy, total milk, skimmed milk, semi skimmed milk, full fat (e.g. whole) milk, total cheese, cheddar cheese, cottage cheese, other cheese, skimmed cheese, semi skimmed cheese, full fat (e.g. whole) cheese, yogurt, skimmed yogurt, semi skimmed yogurt, full fat (e.g. whole) yogurt, cream, semi skimmed cream, full fat (e.g. whole) cream, and butter per 100g of foods and drinks in the 2022 UK Nutrient Databank and reported in the 2021 Scottish Health Survey.
 
 Files needed to run this R script:
 #### Data files
@@ -12,10 +12,10 @@ Four data files are need to run this R script
 - SHeS food list - this is a list of foods and drinks reported in the 2021 Scottish Health Survey.
 - NDB_intake24-nutrient-mapping-UK_V2_2022-18-10-2022 - this is a list of foods and drinks in the 2022 UK Nutrient Databank.
 - Recipes_Yr15_Hierarchy_2023.09.21 - this is the Food Standards Agency Standard Recipe Database which includes ingredient-level information for foods and drinks reported in the 2022 UK Nutrient Databank and 2021 Scottish Health Survey.
-- Sub_Food_Group_Labels - these are labels for the sub food groups.
+- Sub_Food_Group_Labels - these are labels for the sub food groups used in the figures.
   
 #### Output
-- NDB_SHeS_Disag_Dairy_16122023 - this is a database containing the number of dairy ingredients and the amount (g) of total dairy, total milk, skimmed milk, semi skimmed mil, full fat (e.g. whole) milk, total cheese, cheddar cheese, cottage cheese, other cheese, skimmed cheese, semi skimmed cheese, full fat (e.g. whole) cheese, yogurt, skimmed yogurt, semi skimmed yogurt, full fat (e.g. whole) yogurt, cream, semi skimmed cream, full fat (e.g. whole) cream, and butter per 100g of foods and drinks in the 2022 UK Nutrient Databank and reported in the 2021 Scottish Health Survey.
+- NDB_SHeS_Disag_Dairy_16122023 - this is a database containing the number of dairy ingredients and the amount (g) of total dairy, total milk, skimmed milk, semi skimmed milk, full fat (e.g. whole) milk, total cheese, cheddar cheese, cottage cheese, other cheese, skimmed cheese, semi skimmed cheese, full fat (e.g. whole) cheese, yogurt, skimmed yogurt, semi skimmed yogurt, full fat (e.g. whole) yogurt, cream, semi skimmed cream, full fat (e.g. whole) cream, and butter per 100g of foods and drinks in the 2022 UK Nutrient Databank and reported in the 2021 Scottish Health Survey.
 
   
 ### Dairy disag_combining dairy disag with SHeS.do
