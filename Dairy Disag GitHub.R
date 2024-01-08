@@ -25,7 +25,7 @@ junk <- lapply(want, library, character.only = T)
 rm(have, want, junk)
 
 # Assign directory
-setwd("UPDATE with file directory")
+setwd("@UPDATE")
 
 
 
@@ -827,23 +827,23 @@ missing <- join %>% select(FoodNumber,FoodDescription_NDB,FoodDescription_SHeS,F
   
   ## Set nutritional supplement drinks (e.g. Slimfast, Protein shake) to 0 (not counted as dairy)
   test <- test %>% mutate(Dairy_Ingredients = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
-                                                        RecipeSubFoodGroupCode!="50E" ~ Dairy_Ingredients,
-                                                        is.na(RecipeSubFoodGroupCode) ~ 0),
+                                                          RecipeSubFoodGroupCode!="50E" ~ Dairy_Ingredients,
+                                                          is.na(RecipeSubFoodGroupCode) ~ Dairy_Ingredients),
                             Dairy = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
                                               RecipeSubFoodGroupCode!="50E" ~ Dairy,
-                                              is.na(RecipeSubFoodGroupCode) ~ 0),
+                                              is.na(RecipeSubFoodGroupCode) ~ Dairy),
                             Milk = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
                                              RecipeSubFoodGroupCode!="50E" ~ Milk,
-                                             is.na(RecipeSubFoodGroupCode) ~ 0),
+                                             is.na(RecipeSubFoodGroupCode) ~ Milk),
                             Milk_SemiSkimmed = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
                                                          RecipeSubFoodGroupCode!="50E" ~ Milk_SemiSkimmed,
-                                                         is.na(RecipeSubFoodGroupCode) ~ 0),
+                                                         is.na(RecipeSubFoodGroupCode) ~ Milk_SemiSkimmed),
                             Milk_Skimmed = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
                                                      RecipeSubFoodGroupCode!="50E" ~ Milk_Skimmed,
-                                                     is.na(RecipeSubFoodGroupCode) ~ 0),
+                                                     is.na(RecipeSubFoodGroupCode) ~ Milk_Skimmed),
                             Milk_Whole = case_when(RecipeSubFoodGroupCode=="50E" ~ 0,
                                                    RecipeSubFoodGroupCode!="50E" ~ Milk_Whole,
-                                                   is.na(RecipeSubFoodGroupCode) ~ 0))
+                                                   is.na(RecipeSubFoodGroupCode) ~ Milk_Whole))
 
   ## Merge in food group labels ####
   labels <- read_excel("Data/Sub_Food_Group_Labels.xlsx")
